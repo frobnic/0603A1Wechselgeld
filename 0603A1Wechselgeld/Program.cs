@@ -8,7 +8,7 @@ namespace _0603A1Wechselgeld
         {
             int summe = 0, gegeben = 0, rest = 0, anz = 0;
 
-            int[,] geld = new int[6, 2] { { 50, 0 }, { 20, 0 }, { 10, 0 }, { 5, 0 }, { 2, 0 }, { 1, 0 } };
+            int[,] geld = new int[,] { { 50, 0 }, { 20, 0 }, { 10, 0 }, { 5, 0 }, { 2, 0 }, { 1, 0 } };
 
 
             Console.Write("Bitte geben Sie einen Betrag in Cent ein : ");
@@ -16,7 +16,7 @@ namespace _0603A1Wechselgeld
 
             Console.WriteLine("Arraymethode:");
             rest = gegeben;
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < geld.Length/2; i++)
             {
                 geld[i, 1] = (rest / geld[i, 0]);
                 rest = rest % geld[i,0];
