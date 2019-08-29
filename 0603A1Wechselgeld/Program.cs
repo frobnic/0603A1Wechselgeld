@@ -6,7 +6,7 @@ namespace _0603A1Wechselgeld
     {
         static void Main(string[] args)
         {
-            int summe = 0, gegeben = 0, rest = 0, anz = 0;
+            int gegeben = 0, rest = 0, anz = 0;
 
             int[,] geld = new int[,] { { 50, 0 }, { 20, 0 }, { 10, 0 }, { 5, 0 }, { 2, 0 }, { 1, 0 } };
 
